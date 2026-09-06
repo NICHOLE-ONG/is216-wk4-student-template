@@ -7,7 +7,7 @@ const fruit = ref(['apple', 'orange', 'peach'])
 </script>
 
 <template>
-  {{ message }}
+  <P>{{ message }}</P>
 
   <label for=""> <input type="radio" name="fruit" /> {{ fruit[0] }} </label>
   <label for=""> <input type="radio" name="fruit" /> {{ fruit[1] }} </label>

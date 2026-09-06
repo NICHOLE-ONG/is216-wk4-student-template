@@ -44,7 +44,7 @@ function changeTextColor() {
     div ID : {{ id }}
     </div>
 
-    <button type="button" v-on:click="changeColor">Change Color</button>
+    <button type="button" v-on:click="changeColor" :class="blueBtn ? 'btn-primary' : 'btn-danger'">Change Color</button>
   </div>
 
   <div id="part2">
@@ -52,7 +52,7 @@ function changeTextColor() {
     div ID : {{ id }}
     </div>
 
-    <button type="button" v-on:click="changeTextColor">Change Text Color</button>
+    <button type="button" v-on:click="changeTextColor" :class="redBtn ? 'btn-danger' : 'btn-primary'">Change Text Color</button>
   </div>
 </template>
 
