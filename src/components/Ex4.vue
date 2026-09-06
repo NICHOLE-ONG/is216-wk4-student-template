@@ -40,14 +40,18 @@ function changeTextColor() {
   <!-- note: need to use single quotes '' for classes such as btn-primary which contains '-' signs
                 because '-' is a minus operator for (Vue) JavaScript  -->
   <div id="part1">
+    <div id='demo':class="blueBox ? 'blueBox' : 'redBox'">
     <div>div ID : {{ id }}</div>
+    </div>
 
     <button type="button" v-on:click="changeColor">Change Color</button>
   </div>
 
   <div id="part2">
+    <div id='demo':style="{ color: activeColor }">
     <div>div ID : {{ id }}</div>
-
+    </div>
+    
     <button type="button" v-on:click="changeTextColor">Change Text Color</button>
   </div>
 </template>
