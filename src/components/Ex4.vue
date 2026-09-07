@@ -39,6 +39,7 @@ function changeTextColor() {
   <!-- Add/Modify code here -->
   <!-- note: need to use single quotes '' for classes such as btn-primary which contains '-' signs
                 because '-' is a minus operator for (Vue) JavaScript  -->
+                
   <div id="part1">
     <div id='id' :class="blueBox ? 'blueBox' : 'redBox'">
     div ID : {{ id }}
