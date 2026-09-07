@@ -8,7 +8,7 @@ const blueBox = ref(true)
 const blueBtn = ref(true)
 
 // part 2
-const id2 = ref('demo')
+const id2 = ref('demo2')
 const activeColor = ref('red')
 const redBtn = ref(true)
 
