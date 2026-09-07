@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-const option = ref('Username login') //default it first
+const option = ref('username') //default it first so first loaded page is username page
 // Add code here
 </script>
 
@@ -9,10 +9,10 @@ const option = ref('Username login') //default it first
   <!-- Add/modify code in the following to have a dropdown list 
         which lets the user to select either to login with username or email -->
   <select v-model="option">
-    <option>Username login</option>
-    <option>Email login</option>
+    <option value="username">Username login</option>
+    <option value="email">Email login</option>
   </select>
-  <div v-if="option=='Username login'"> 
+  <div v-if="option==='username'"> 
     <label>Username</label>
     <input placeholder="Enter your username" />
 </div>

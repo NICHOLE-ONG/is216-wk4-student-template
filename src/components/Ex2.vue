@@ -2,8 +2,9 @@
 import { ref } from 'vue'
 const me = ref('/assets/me.png')
 const width=ref('200')
-const height=ref('200')
-let img={ src:me.value, width:width.value, height:height.value }
+const height=ref('200') //doesnt matter if got "" ornot bc vue sees it as a string
+
+const img= ref({ src:'/assets/me.png', width:'200', height:'200' })
 
 // Add code here
 </script>
