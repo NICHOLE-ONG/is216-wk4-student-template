@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 const me = ref('/assets/me.png')
-const width=ref(400)
-const height=ref(300)
+const width=ref('200')
+const height=ref('200')
 let img={ src:me.value, width:width.value, height:height.value }
 
 // Add code here
@@ -11,7 +11,7 @@ let img={ src:me.value, width:width.value, height:height.value }
 <template>
   <!-- Add code here -->
    <!-- sets img value to whatever is inside 'me'-->
-   <img v-bind:src="me" v-bind:width="width" v-bind:height="height" alt="me">
+   <img v-bind:src="me" v-bind:width="width" v-bind:height="height">
    <!--multiple using obj-->
-   <img v-bind="img" alt="me">
+   <img v-bind="img">
 </template>

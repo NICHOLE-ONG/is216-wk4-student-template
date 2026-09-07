@@ -40,7 +40,7 @@ function changeTextColor() {
   <!-- note: need to use single quotes '' for classes such as btn-primary which contains '-' signs
                 because '-' is a minus operator for (Vue) JavaScript  -->
   <div id="part1">
-    <div id='demo' :class="blueBox ? 'blueBox' : 'redBox'">
+    <div id='id' :class="blueBox ? 'blueBox' : 'redBox'">
     div ID : {{ id }}
     </div>
 
@@ -48,7 +48,7 @@ function changeTextColor() {
   </div>
 
   <div id="part2">
-    <div id='demo' :style="{ color: activeColor }">
+    <div id='id' :style="{ color: activeColor }">
     div ID : {{ id }}
     </div>
 
