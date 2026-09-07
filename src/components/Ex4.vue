@@ -8,6 +8,7 @@ const blueBox = ref(true)
 const blueBtn = ref(true)
 
 // part 2
+const id2 = ref('demo')
 const activeColor = ref('red')
 const redBtn = ref(true)
 
@@ -39,9 +40,9 @@ function changeTextColor() {
   <!-- Add/Modify code here -->
   <!-- note: need to use single quotes '' for classes such as btn-primary which contains '-' signs
                 because '-' is a minus operator for (Vue) JavaScript  -->
-                
+
   <div id="part1">
-    <div id='id' :class="blueBox ? 'blueBox' : 'redBox'">
+    <div :id='id' :class="blueBox ? 'blueBox' : 'redBox'">
     div ID : {{ id }}
     </div>
 
@@ -49,7 +50,7 @@ function changeTextColor() {
   </div>
 
   <div id="part2">
-    <div id='id' :style="{ color: activeColor }">
+    <div :id='id2' :style="{ color: activeColor }">
     div ID : {{ id }}
     </div>
 
